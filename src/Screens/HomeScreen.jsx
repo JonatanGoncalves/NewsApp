@@ -1,8 +1,10 @@
-import { Button, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 export default function HomeScreen({navigation}) {
     return(
-        <View>
+        <View style={styles.container}>
+            <Text>Tela de Notícias</Text>
+            <Text>{"\n"}</Text>
             <Button
             title='Ir Para a Tela de Notícias'
             onPress={() =>
@@ -11,3 +13,13 @@ export default function HomeScreen({navigation}) {
         </View>
     )
 }
+
+const styles = StyleSheet.create(
+    {
+        container: {
+            flex: 1,
+            backgroundColor: "#fff",
+            alignItems: "center",
+            justifyContent: "center",
+        }
+    });
